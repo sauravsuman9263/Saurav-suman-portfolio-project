@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #3b6374, #111, #0f2027);
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+nav{
+    height: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5%;
+}
+
+nav ul{
+    height: 100%;
+    width: 60%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li{
+    font-size: medium;
+    padding: 8px 25px;
+}
+
+nav ul li select{
+    font-size: 20px;
+}
+.toggle-button {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #16202a;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+a {
+    color: rgb(11, 11, 11);
+    text-decoration: none; /* This sets the anchor text color to blue */
+}
+a:hover {
+    color: rgb(240, 235, 235); 
+    text-decoration: underline; /* Changes the color when the user hovers over the link */
+}
+.link {
+    color: rgb(244, 248, 244); /* This sets the font color of elements with the class 'my-link' */
+}
+.link:hover {
+    color: orange; /* Changes the color when hovering over the link with the class */
+}
+.name {
+    color: #00ffe1;
+}
+
+.Main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.Main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.Main p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #00ffe1;
+    color: rgb(17, 17, 17);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.hexagon {
+    position: relative;
+    width: 600px;
+    aspect-ratio: 1;
+    margin: 30px auto;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    overflow: hidden;
+}
+
+.hexagon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.background {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    width: 88%;
+    height: 90%;
+    background: #00ffe1;
+    z-index: -1;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    filter: blur(40px);
+}
+
+.about {
+    background: #18212b;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about p {
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+.hexagonn {
+    position: relative;
+    width: 200px;
+    aspect-ratio: 1;
+    margin: 30px auto;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    overflow: hidden;
+}
+.hexagonn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.backgroundd {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    width: 88%;
+    height: 90%;
+    background:#00ffe1;
+    z-index: -1;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    filter: blur(40px);
+    border-radius: 5px;
+}
+
+.btn-read {
+    padding: 10px 10px;
+    background: #00ffe1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin:0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f2027;
+    color: white;
+}
+
+@media (min-width: 768px) {   
+    .Main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 50px;
+    }
+    .Main .text {
+        flex: 1;
+        margin-right: 30px;
+    }
+
+    .Main .image {
+        flex: 1;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .about .content {
+        flex: 1;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 768px) {
+    .hexagon {
+        position: relative;
+        width: 200px;
+        aspect-ratio: 1;
+        margin: 30px auto;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        overflow: hidden;
+    }
+    .hexagon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .background {
+        position: absolute;
+        background: #00ffe1;
+        z-index: -1;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        filter: blur(40px);
+        border-radius: 5px;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #00ffe1;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 40%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+    }
+    nav ul.show {
+        display: flex;
+        max-height: 300px; /* Adjust based on content */
+    }
+    .toggle-button {
+        display: block;
+    }    
+}
